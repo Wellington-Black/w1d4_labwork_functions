@@ -1,3 +1,5 @@
+import pdb
+
 tasks = [
     { "description": "Wash Dishes", "completed": False, "time_taken": 10 },
     { "description": "Clean Windows", "completed": False, "time_taken": 15 },
@@ -52,18 +54,16 @@ tasks = [
 
 #print(task_has_description(tasks))
 
-def find_user_id( list, user_id ):
-  user_id_found = None
-  for user in list:
-    if user["user_id"] == user_id:
-      user_id_found = user
+def task_has_description(tasks):
+    pdb.set_trace()
+    description_located = []
 
-  return user_id_found
-
-def task_has_description(list):
-    description_found = None
     for task in tasks:
-        if task["description"] != None
-        return description_found
+        description_located.append(task["description"])
+        description_found = None
+        if task["description"] != description_found:
+            description_is_found = task
+        
+    return description_is_found
 
-print(find_user_id())
+print(task_has_description(tasks))
