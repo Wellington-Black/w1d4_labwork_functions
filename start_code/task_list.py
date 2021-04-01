@@ -5,3 +5,65 @@ tasks = [
     { "description": "Feed Cat", "completed": False, "time_taken": 5 },
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
+
+# def incomplete_tasks(list):
+#     incompleted_tasks = []
+#     for task in tasks:
+#         if task["completed"] == False:
+#             task_not_done = task
+#             incompleted_tasks.append(task)
+#     return incompleted_tasks
+# print(incomplete_tasks(tasks))
+
+# def completed_tasks(list):
+#     completed_tasks = []
+#     for task in tasks:
+#         if task["completed"] == True:
+#             task_is_done = task
+#             completed_tasks.append(task)
+#     return completed_tasks
+# print(completed_tasks(tasks))
+
+
+# def task_description(list):
+#     task_description = []
+#     for task in tasks:
+#         task_description.append(task["description"])
+#     return task_description
+# print(task_description(tasks))
+
+
+# def tasks_time_taken(list):
+#     time_for_task = []
+#     for task in tasks:
+#         time_for_task.append(task["description"])
+#         time_for_task.append(task["time_taken"])
+#     return time_for_task
+
+# print(tasks_time_taken(tasks))
+
+# def task_has_description(list):
+    
+#     for task in tasks:
+#         if task["description"] != None:
+#             return task["description"]
+#         # else:
+#         #     return "not found"
+
+#print(task_has_description(tasks))
+
+def find_user_id( list, user_id ):
+  user_id_found = None
+  for user in list:
+    if user["user_id"] == user_id:
+      user_id_found = user
+
+  return user_id_found
+
+def task_has_description(list):
+    description_found = None
+    for task in tasks:
+        if task["description"] != None
+        return description_found
+
+print(find_user_id())
